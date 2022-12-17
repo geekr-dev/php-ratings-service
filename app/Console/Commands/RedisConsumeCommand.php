@@ -3,12 +3,12 @@
 namespace App\Console\Commands;
 
 use App\Actions\CreateProductAction;
+use App\Service\RedisService;
 use Ecommerce\Common\DTOs\Product\ProductData;
 use Ecommerce\Common\Enums\Events;
-use Ecommerce\Common\Services\RedisService;
 use Illuminate\Console\Command;
 
-class RedisConsumerCommand extends Command
+class RedisConsumeCommand extends Command
 {
     /**
      * The name and signature of the console command.

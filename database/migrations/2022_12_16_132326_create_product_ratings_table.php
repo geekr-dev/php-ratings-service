@@ -17,7 +17,7 @@ return new class extends Migration
         Schema::create('product_ratings', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(Product::class);
-            $table->float('score');
+            $table->decimal('score');
             $table->text('comment');
             $table->timestamps();
         });
