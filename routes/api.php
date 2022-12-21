@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('products/{product}/ratings', RatingController::class . '@store');
+Route::get('products/ratings', RatingController::class . '@index');
